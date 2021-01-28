@@ -54,13 +54,13 @@ body {
 #content > header {
     grid-area: header;
     background-color: white;
-    height: 3em;
+    height: 4em;
     display: flex;
     justify-content: flex-end;
 }
 
 #content > header > .nav {
-    background-color: ;
+    background-color: white;
     display: flex;
     align-items: center;
     margin-right: 5%;
@@ -68,7 +68,7 @@ body {
 
 #content > header > .nav > .nav-Button {
 
-    font-size: 40px;
+    font-size: 3em;
     text-transform: uppercase;
     padding: 0px 10px;
 }
