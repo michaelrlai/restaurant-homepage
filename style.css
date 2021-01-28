@@ -30,7 +30,40 @@ a:visited {
 
 /* ----------------------- */
 
-.burger {
-    width: 50%;
-    height: auth;
+body {
+    margin: 0;
+}
+
+#content {
+    background-image: url("salad.jpg");
+    background-size: 1920px;
+    background-position: 0px -800px;
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+#content > header {
+    grid-area: header;
+    background-color: white;
+    height: 3em;
+}
+
+
+
+#content > main {
+    grid-area: main;
+    overflow: auto;
+}
+
+#content > footer {
+    grid-area: footer;
+    background-color: white;
+    height: 6em;
 }
