@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
 @viewport {
     zoom: 1.0;
     width: extent-to-zoom;
@@ -23,30 +25,35 @@ html
 }
 
 a:link,
-a:visited {
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     outline: none;
+    color: inherit;
 }
 
 /* ----------------------- */
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Montserrat";
 }
 
 #content {
     background-image: url("salad.jpg");
-    background-size: ;
-    background-position: 0px -800px;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+
+
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         'header'
-        'main'
+        'home'
         'footer';
 }
 
@@ -54,7 +61,7 @@ body {
 #content > header {
     grid-area: header;
     background-color: white;
-    height: 4em;
+    height: 5em;
     display: flex;
     justify-content: flex-end;
 }
@@ -66,23 +73,83 @@ body {
     margin-right: 5%;
 }
 
-#content > header > .nav > .nav-Button {
-
-    font-size: 3em;
+#content > header > .nav > .nav-button {
+    font-size: 1.5em;
     text-transform: uppercase;
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
-#content > main {
-    grid-area: main;
+#content > header > .nav > .nav-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#content > .main {
+    grid-area: home;
     overflow: auto;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 600px 1fr;
+
+}
+
+#content > .main > .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 3em;
+    font-weight: 500;
+}
+
+
+#content > .main > .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#content > .main > .menu-container > .menu {
+    background-color: white;
+    width: 50%;
+    height: 90%;
+}
+
+#content > .main > .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#content > .main > .about-container > .about {
+    background-color: white;
+    width: 50%;
+    height: 90%;
 }
 
 #content > footer {
     grid-area: footer;
-    background-color: white;
-    height: 6em;
+    background-color: black;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#content > footer > .footer-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#content > footer > .footer-nav > .footer-button {
+    color: white;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+#content > footer > .footer-nav > .footer-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
