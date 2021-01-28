@@ -63,12 +63,12 @@ body {
     background-color: ;
     display: flex;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 #content > header > .nav > .nav-Button {
 
-    font-size: 1.2em;
+    font-size: 40px;
     text-transform: uppercase;
     padding: 0px 10px;
 }
@@ -76,6 +76,9 @@ body {
 #content > main {
     grid-area: main;
     overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 600px 1fr;
 }
 
 #content > footer {
