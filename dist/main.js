@@ -1,1 +1,1 @@
-console.log("Hello world!"),console.log("Testing");
+(()=>{const e=document.querySelector("#content"),t=document.createElement("div");e.appendChild(t);const n=document.createElement("h1");n.textContent="Good Restaurant",t.appendChild(n);const d=document.createElement("img");d.src="burger.jpg",d.classList.add("burger"),t.appendChild(d);const o=document.createElement("p");o.textContent="Grand opening of Good Restaurant...",t.appendChild(o)})();
