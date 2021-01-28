@@ -37,7 +37,7 @@ body {
 
 #content {
     background-image: url("salad.jpg");
-    background-size: 1920px;
+    background-size: ;
     background-position: 0px -800px;
     
     height: 100vh;
@@ -67,7 +67,7 @@ body {
 }
 
 #content > header > .nav > .nav-Button {
-    
+
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 0px 10px;
