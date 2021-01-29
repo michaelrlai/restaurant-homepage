@@ -1,7 +1,5 @@
 function drawMenu () {
-    const main = document.createElement("main"); // Draw home page content
-    main.classList.add("main");
-    content.appendChild(main);
+    const main = document.querySelector(".main");
 
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container");

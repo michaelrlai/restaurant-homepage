@@ -1,13 +1,11 @@
+
 function drawHome () {
-    const main = document.createElement("main"); // Draw home page content
-    main.classList.add("main");
-    content.appendChild(main);
-
-    const title = document.createElement("h1");
-    title.classList.add("title");
-    title.textContent = "Plate and Spice";
-    main.appendChild(title);
-
+    const main = document.querySelector(".main");
+    
+    const home = document.createElement("h1");
+    home.classList.add("home");
+    home.textContent = "Plate and Spice";
+    main.appendChild(home); 
 }
 
 export { drawHome };

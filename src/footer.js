@@ -9,7 +9,7 @@ function drawFooter() {
     footer.appendChild(footerNav);
 
     function navButtons() { // Draws buttons of nav bar
-        const buttons = ["careers", "menu", "about", "contact"] 
+        const buttons = ["menu", "about", "contact"] 
         for (let i = 0; i < buttons.length; i++) {
             const button = document.createElement("div");
             button.classList.add(`nav-${buttons[i]}`, "footer-button");
